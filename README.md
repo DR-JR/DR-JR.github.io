@@ -1,2 +1,2 @@
 # WEB110
-Web110 Fall 2026
+Ryne McCormick
