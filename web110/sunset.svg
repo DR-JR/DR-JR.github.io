@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" role="img" aria-labelledby="title">
+  <title id="title">Sunset over mountains</title>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b1055"/>
+      <stop offset="0.6" stop-color="#d53369"/>
+      <stop offset="1" stop-color="#f8b500"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#sky)"/>
+  <circle cx="200" cy="190" r="60" fill="#ffd56b"/>
+  <polygon points="0,300 0,210 90,130 170,220 250,120 330,200 400,150 400,300" fill="#3d2c5e"/>
+  <polygon points="0,300 0,250 120,190 220,260 310,200 400,240 400,300" fill="#1e1433"/>
+</svg>
