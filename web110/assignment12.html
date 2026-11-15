@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  <h1>Ryne McCormick</h1>
-
-  <canvas id="myCanvas" width="300" height="150" style="border:1px solid grey"></canvas>
-  <canvas id="myCanvas2" width="600" height="300" style="border:5px solid black"></canvas>
   
   <body>
+  <h1>Ryne McCormick</h1>
+
+  <canvas id="myCanvas" width="350" height="200" style="border:1px solid grey"></canvas>
+  <canvas id="myCanvas2" width="600" height="300" style="border:5px solid black"></canvas>
+  
+  
   
   <p id="demo"></p>
   
@@ -15,9 +17,7 @@
   document.getElementById("demo").innerHTML = d;
     
   const c = document.getElementById("myCanvas");
-  
   const ctx = c.getContext("2d");
-  const d = document.getElementById("myCanvas2");
   ctx.font = "36px Verdana";
 
   var gradient = ctx.createLinearGradient(0, 0, c.width, 0);
@@ -29,15 +29,13 @@
   ctx.fillStyle = gradient;
   ctx.fillText("Ryne McCormick", 10, 90);
 
-  var example = document.getElementById("example");
-  var context = example.getContext("2d");
+  const c2 = document.getElementById("myCanvas2");
+  const context = c2.getContext("2d");
 
-  // Draw a red circle, radius 35
   context.beginPath();
-  context.fillStyle = 'red';
-  context.arc(60, 140, 35, 0, 2 * Math.PI, false);
+  context.arc(60, 140, 35, 0, 2 * Math.PI);
+  ontext.fillStyle = 'red';
   context.fill();
-  context.closePath();
     
   </script>
   
