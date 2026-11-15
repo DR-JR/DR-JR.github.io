@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
+  <head>
+  <meta charset="UTF-8">
+  <title>Assignment 12 - Javascript</title>
+  <link rel="stylesheet" href="styles.css">
+  </head>
   <body>
-  <h1>Ryne McCormick</h1>
-
+  <h1 id="myName"></h1>
   <canvas id="myCanvas" width="350" height="200" style="border:1px solid grey"></canvas>
   <canvas id="myCanvas2" width="600" height="300" style="border:5px solid black"></canvas>
   <p id="demo"></p>
   <div id="learning"></div>
   
   <script>
+  document.getElementById("myName").innerHTML = "Ryne McCormick";
+    
   const d = new Date();
   document.getElementById("demo").innerHTML = d;
     
@@ -22,7 +27,6 @@
   gradient.addColorStop("0.5", "blue");
   gradient.addColorStop("1.0", "teal");
   
-  // Fill with gradient
   ctx.fillStyle = gradient;
   ctx.fillText("Ryne McCormick", 10, 90);
 
@@ -33,7 +37,7 @@
   context.arc(60, 140, 35, 0, 2 * Math.PI);
   context.fillStyle = 'red';
   context.fill();
-  document.getElementById("learning").innerHTML = "<p>This week was an adventure in Javawcript which is something else I've been hesitant about trying to learn and was intimidated by, but it turns out it's not so hard after all and provides lots of fun ways to present your ideas to the world. I can definitely see myself using these skills in the future for presentations or projects at a job, or even in my personal life just for fun.</p>";
+  document.getElementById("learning").innerHTML = "<p>This week was an adventure in Javawcript which is something else I've been hesitant about trying to learn and was intimidated by, but it turns out it's not so hard after all and provides lots of fun ways to present your ideas to the world. I enjoyed further discovering the workings of HTML and already understand most of what I'm looking at when I use Inspect element. I can definitely see myself using these skills in the future for presentations or projects at a job, or even in my personal life just for fun.</p>";
   </script>
   </body>
 </html>
