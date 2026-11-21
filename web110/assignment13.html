@@ -7,14 +7,14 @@
   </head>
   <body>
   <h1 id="select"></h1>
-  <div id="selectBullets"></p>
+  <div id="selectBullets"></div>
   <h2 id="insert"></h2>
-  <div id="inserts"></p>
+  <div id="inserts"></div>
    <div id="learning"></div>
     
   <script>
   document.getElementById("select").innerHTML = "Single-Table SELECT Statements:";
-  document.getElementById("selectBullets").innerHTML = 
+  document.getElementById("selectBullets").innerHTML = '
     <ul>
     <li>SELECT * FROM Customers;</li>
     <li>SELECT CustomerID, CustomerName FROM Customers;</li>
@@ -24,16 +24,16 @@
     <li>SELECT COUNT(*) AS '# of Customers', Country FROM Customers GROUP BY Country;</li>
     <li>SELECT COUNT(*) AS '# of Customers', Country FROM Customers GROUP BY Country ORDER BY COUNT(*) DESC, Country ASC;</li>
     <li>SELECT COUNT(*) AS '# of Customers', Country FROM Customers GROUP BY Country HAVING COUNT(*) > 10 ORDER BY COUNT(*) DESC, Country ASC;</li>
-    </ul>
+    </ul>';
   document.getElementById("insert").innerHTML = "INSERT, UPDATE, DELETE:";
-  document.getElementById("inserts").innerHTML =
+  document.getElementById("inserts").innerHTML ='
     <ul>
     <li>INSERT INTO Shippers (ShipperID, ShipperName, Phone) VALUES (4, 'On Time Delivery', '(503) 555 0123');</li>
     <li>UPDATE Products SET Price = Price +1;</li>
     <li>UPDATE Products SET Price = Price -1;</li>
     <li>UPDATE Shippers SET ShipperName = 'On-Time Delivery' WHERE ShipperID = 4;</li>
     <li>DELETE FROM Shippers WHERE ShipperID = 4;</li>
-    </ul>
+    </ul>';
   document.getElementById("learning").innerHTML = "<p>Databases are a lot of fun to play around with for me, I started learning SQL at the beginning of this semester and it is always nice to go over the Single-Table commands again, I actually had to go look up something very simple that I just haven't had to do in a while! I am getting more comfortable with the javascript and HTML flowing from my fingers</p>";
   </script>
   </body>
